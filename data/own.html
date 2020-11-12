@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+      <meta charset="utf-8">
+      <title>WEB</title>
+      <style>
+        label.title{
+          width: 80px;
+          float: left;
+        }
+        input.login{
+          margin-top: 30px;
+          margin-left: 2px;
+        }
+      </style>
+  </head>
+  <body>
+    <h1> 회원가입 </h1>
+    <form>
+      <fieldset>
+        <legend>로그인 정보</legend>
+        <ul>
+          <li>
+            <label for="id" class="title">아이디</label>
+            <input type="text" id="id">
+          </li>
+          <br>
+          <li>
+            <label for="pw" class="title">비밀번호</label>
+            <input type="password" id="pw">
+            <label for="pw">영문 숫자 혼합해서 10자 이내</label>
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" class="login" value="회원가입하기">
+    </form>
+  </body>

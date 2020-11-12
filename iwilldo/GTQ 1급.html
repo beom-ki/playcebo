@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+    <style>
+      .output{
+        text-align: center;
+        margin-left :550px;
+        font-size: 150px;
+        color : blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>10월 24일 1급 시험!!</h1>
+    <h1>11월 13일 시험결과 발표</h1>
+    <script>
+      var now = new Date();
+      var then = new Date("2020.11.13");
+      var gap = then.getTime()-now.getTime();
+      gap = Math.floor(gap/(1000*60*60*24*-1));
+      document.write(`<span class="output">D${gap}!</span>`);
+    </script>
+  </body>
+</html>
